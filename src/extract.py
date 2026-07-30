@@ -8,7 +8,7 @@ import json, os, re
 from google import genai
 from google.genai import types
 
-MODEL = os.environ.get("EXTRACT_MODEL", "gemini-flash-latest")
+MODEL = os.environ.get("EXTRACT_MODEL", "gemini-2.5-flash")
 THEMES = ["maturita", "normativa", "scadenze", "iscrizioni", "didattica", "orientamento"]
 
 SCHEMA_HINT = """Rispondi SOLO con un oggetto JSON valido (nessun testo fuori dal JSON) con questa forma:
